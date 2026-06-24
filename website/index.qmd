@@ -10,7 +10,7 @@ title: "Survey Sample International 2012 Cultural Tastes Dataset"
 
 ## Overview
 
-Welcome to the repository and documentation website hosting the **Survey Sample International 2012 (SSI-2012)** dataset. This comprehensive dataset was collected by **Omar Lizardo** (UCLA, formerly University of Notre Dame) and **Sara Skiles** (formerly University of Notre Dame) as part of a national sociological study investigating the cultural tastes, preferences, social stratification, and aesthetic perceptions of Americans.
+Welcome to the repository and documentation website hosting the **Survey Sample International 2012 (SSI-2012)** dataset. This comprehensive dataset was collected by **Omar Lizardo** (UCLA, formerly University of Notre Dame) and **Sara Skiles** (University of Notre Dame) as part of a national sociological study investigating the cultural tastes, preferences, social stratification, and aesthetic perceptions of Americans.
 
 This dataset provides a rich public resource for researchers, students, and practitioners interested in the sociology of culture, consumption practices, and social demographics.
 
@@ -47,10 +47,8 @@ The SSI-2012 dataset covers a wide array of cultural, aesthetic, and demographic
 ## Dataset Cleanliness & Integrity
 
 This distribution contains data that has been **comprehensively cleaned and properly labeled** for immediate scientific use:
-* All complex regression factor scores, centered columns, centered interactions, and mathematical indices constructed specifically for publication drafts have been removed to preserve a clean, raw-variable schema.
-* All categorical and ordinal variables have embedded **Stata and SPSS value labels**, and are converted to standard **R factors** in the primary R format.
-* Variables have been documented in a fully automated, interactive data dictionary.
-
+-All categorical and ordinal variables have embedded **Stata and SPSS value labels**, and are converted to standard **R factors** in the primary R format.
+-Variables have been documented in a fully automated, interactive data dictionary.
 ---
 
 ## Citation & Citation Guide
