@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: "../docs"
+
+website:
+  title: "SSI-2012 Dataset"
+  description: "Survey Sample International 2012 Cultural Tastes Dataset"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: codebook.qmd
+        text: Interactive Codebook
+      - href: download.qmd
+        text: Data Download
+      - href: explore.qmd
+        text: Exploratory Analysis
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+    toc-location: right
+    code-fold: true
+    code-summary: "Show Code"
+    link-external-newwindow: true

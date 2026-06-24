@@ -1,0 +1,25 @@
+{
+  "permission": {
+    "external_directory": {
+      "/home/omarlizardo/.posit/assistant/*": "allow"
+    },
+    "edit": {
+      "*.md": "allow",
+      "*.R": "allow",
+      "*.yml": "allow",
+      "*.css": "allow",
+      "*.qmd": "allow",
+      "*/.nojekyll": "allow",
+      "*/.gitignore": "allow"
+    },
+    "bash": {
+      "mkdir *": "allow",
+      "mv *": "allow",
+      "pandoc *": "allow",
+      "quarto *": "allow"
+    },
+    "executeCode": {
+      "*": "allow"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "explore.html",
+    "href": "explore.html",
+    "title": "Exploratory Analysis Showcase",
+    "section": "",
+    "text": "This page provides a quick showcase of exploratory analysis using the cleaned SSI-2012 dataset. We illustrate basic data distributions and aesthetic tastes using clean, standard visualizations in R."
+  },
+  {
+    "objectID": "explore.html#classical-music-tastes",
+    "href": "explore.html#classical-music-tastes",
+    "title": "Exploratory Analysis Showcase",
+    "section": "1. Classical Music Tastes",
+    "text": "1. Classical Music Tastes\nLet’s examine how respondents rate their liking of Classical music (classicaltaste). This variable has four main levels: like, dislike, neither like nor dislike, and I am not familiar with this type of music.\n\n\nShow Code\n# Convert classicaltaste to standard factor for plotting\ndf_classical &lt;- df |&gt; \n  filter(!is.na(classicaltaste)) |&gt; \n  mutate(classicaltaste = as_factor(classicaltaste))\n\n# Create bar chart with aesthetic mapping to y-axis (avoiding coord_flip)\nggplot(df_classical, aes(y = classicaltaste)) +\n  geom_bar() +\n  labs(\n    x = \"Count of Respondents\",\n    y = \"Classical Music Taste\"\n  )\n\n\n\n\n\n\n\n\nFigure 1: Distribution of Classical Music Tastes among respondents.\n\n\n\n\n\nAs shown in Figure 1, a substantial majority of the 2,276 respondents report that they like Classical music, while only a small percentage are completely unfamiliar with it."
+  },
+  {
+    "objectID": "explore.html#subjective-social-class-self-identification",
+    "href": "explore.html#subjective-social-class-self-identification",
+    "title": "Exploratory Analysis Showcase",
+    "section": "2. Subjective Social Class Self-Identification",
+    "text": "2. Subjective Social Class Self-Identification\nRespondents were asked: “Which of these do you think best describes you?” with options: lower class, working class, middle class, and upper class (percclass).\n\n\nShow Code\n# Convert percclass to factor and filter missing values\ndf_class &lt;- df |&gt; \n  filter(!is.na(percclass)) |&gt; \n  mutate(percclass = as_factor(percclass))\n\n# Plot distribution\nggplot(df_class, aes(y = percclass)) +\n  geom_bar() +\n  labs(\n    x = \"Count of Respondents\",\n    y = \"Subjective Social Class\"\n  )\n\n\n\n\n\n\n\n\nFigure 2: Self-described subjective social class of respondents.\n\n\n\n\n\nAs displayed in Figure 2, the majority of respondents identify as middle class or working class, with smaller proportions self-identifying as lower class or upper class."
+  },
+  {
+    "objectID": "explore.html#painting-impression-ratings-pre-test",
+    "href": "explore.html#painting-impression-ratings-pre-test",
+    "title": "Exploratory Analysis Showcase",
+    "section": "3. Painting Impression Ratings (Pre-Test)",
+    "text": "3. Painting Impression Ratings (Pre-Test)\nBefore receiving any social manipulation, respondents gave their first impression of an abstract painting on a scale from 1 (dislike very much) to 7 (like very much) (taste1).\n\n\nShow Code\n# Convert taste1 to standard factor to represent its ordinal categories\ndf_painting &lt;- df |&gt; \n  filter(!is.na(taste1)) |&gt; \n  mutate(taste1_factor = as_factor(taste1))\n\nggplot(df_painting, aes(y = taste1_factor)) +\n  geom_bar() +\n  labs(\n    x = \"Count of Respondents\",\n    y = \"Initial Rating (1 = Dislike Very Much, 7 = Like Very Much)\"\n  )\n\n\n\n\n\n\n\n\nFigure 3: Distribution of initial painting taste ratings (1-7 scale).\n\n\n\n\n\nThe pre-test ratings shown in Figure 3 reveal a wide distribution of opinions on the painting, peaking in the neutral and mild liking ranges."
+  },
+  {
+    "objectID": "codebook.html",
+    "href": "codebook.html",
+    "title": "Interactive Codebook",
+    "section": "",
+    "text": "This interactive codebook provides detailed information on all 404 variables in the cleaned SSI-2012 dataset. You can search, filter, and sort variables by name, description, data type, or value categories.\nUse the search bar on the top-right to find specific terms (e.g., searching “jazz”, “income”, “female”, or “concur”), or filter columns directly.\nTable 1"
+  },
+  {
+    "objectID": "codebook.html#column-descriptions-in-the-metadata",
+    "href": "codebook.html#column-descriptions-in-the-metadata",
+    "title": "Interactive Codebook",
+    "section": "Column Descriptions in the Metadata",
+    "text": "Column Descriptions in the Metadata\nThe table above contains the following columns for each variable:\n\nVariable Name: The short name of the column in the dataset (e.g., classicaltaste, female).\nDescription / Label: A plain-English explanation of what the variable represents.\nData Type: Whether the variable is Categorical (Labelled), Numeric, Character (Text), or a Binary Indicator (0/1).\nValue Codes / Categories: For categorical and binary variables, this column displays the numeric codes and their corresponding text meanings (e.g., 1 = like; 2 = dislike). For numeric columns, it displays the valid range.\nValid N: The number of non-missing observations (out of 2,276 total).\nMissing N: The number of missing (NA) observations.\nMissing %: The percentage of respondents with missing values for that variable."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Survey Sample International 2012 Cultural Tastes Dataset",
+    "section": "",
+    "text": "Collected by Omar Lizardo & Sara Skiles"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Survey Sample International 2012 Cultural Tastes Dataset",
+    "section": "Overview",
+    "text": "Overview\nWelcome to the repository and documentation website hosting the Survey Sample International 2012 (SSI-2012) dataset. This comprehensive dataset was collected by Omar Lizardo (UCLA, formerly University of Notre Dame) and Sara Skiles (formerly University of Notre Dame) as part of a national sociological study investigating the cultural tastes, preferences, social stratification, and aesthetic perceptions of Americans.\nThis dataset provides a rich public resource for researchers, students, and practitioners interested in the sociology of culture, consumption practices, and social demographics."
+  },
+  {
+    "objectID": "index.html#dataset-scope-key-topics",
+    "href": "index.html#dataset-scope-key-topics",
+    "title": "Survey Sample International 2012 Cultural Tastes Dataset",
+    "section": "Dataset Scope & Key Topics",
+    "text": "Dataset Scope & Key Topics\nThe SSI-2012 dataset covers a wide array of cultural, aesthetic, and demographic measures from a national sample of 2,276 Americans:\n\n1. Music Genres and Preferences\n\nGenre Tastes: 1–4 ordinal rating of liking/disliking for 20 distinct music genres (ranging from Classical, Opera, and Jazz to Bluegrass, Hip-Hop, Indie, and Heavy Metal).\nListening History: Binary check-all-that-apply indicators representing whether the respondent listened to each of the 20 genres in the past month.\nFavorite Genre: A single categorical measure identifying the respondent’s favorite genre among all 20 options.\n\n\n\n2. Cultural Stereotypes: Typical Fan Characteristics\n\nA massive, multi-dimensional grid of 320 variables (20 genres × 16 social characteristics) capturing the respondent’s perceptions of the “typical fans” of each music genre.\nSocial dimensions include gender, race/ethnicity, education, age, and social class (e.g., whether a typical fan is female, college-educated, white, working-class, etc.).\n\n\n\n3. Aesthetics & Painting Conformity Experiment\n\nThe survey embedded an experimental design measuring aesthetic judgments. Respondents were shown an abstract painting and asked for their first impressions (taste1).\nThey were then randomized into control and treatment groups and given social information about whether a reference group (varying in education and occupation) liked or disliked the painting (alterlike).\nThey were asked how similar they felt to that group (similarity) and then asked to re-evaluate the painting (taste2). This allows researchers to model social conformity, taste mobility, and symbolic boundary-drawing.\n\n\n\n4. Comprehensive Social Demographics\n\nDetailed respondent-level demographics including:\n\nGender, Age, and Census Region of Residence.\nRace/Ethnicity (self-reported and individual indicators).\nEducation level (individual degree achievements and parents’ college education status).\nCurrent employment status and detailed occupational categories.\nPre-tax annual income and subjective social class self-identification."
+  },
+  {
+    "objectID": "index.html#dataset-cleanliness-integrity",
+    "href": "index.html#dataset-cleanliness-integrity",
+    "title": "Survey Sample International 2012 Cultural Tastes Dataset",
+    "section": "Dataset Cleanliness & Integrity",
+    "text": "Dataset Cleanliness & Integrity\nThis distribution contains data that has been comprehensively cleaned and properly labeled for immediate scientific use: * All complex regression factor scores, centered columns, centered interactions, and mathematical indices constructed specifically for publication drafts have been removed to preserve a clean, raw-variable schema. * All categorical and ordinal variables have embedded Stata and SPSS value labels, and are converted to standard R factors in the primary R format. * Variables have been documented in a fully automated, interactive data dictionary."
+  },
+  {
+    "objectID": "index.html#citation-citation-guide",
+    "href": "index.html#citation-citation-guide",
+    "title": "Survey Sample International 2012 Cultural Tastes Dataset",
+    "section": "Citation & Citation Guide",
+    "text": "Citation & Citation Guide\nIf you use this dataset in a scientific publication, paper, presentation, or class project, please use the following citation:\n\n\n\n\n\n\nNoteRecommended Citation\n\n\n\nLizardo, Omar, and Sara Skiles. 2012. Survey Sample International (SSI) Cultural Tastes Survey. [Dataset]. Distributed by [Insert Repo Link].\n\n\nFor LaTeX users, here is the BibTeX entry:\n@misc{lizardo_skiles_2012,\n  author       = {Lizardo, Omar and Skiles, Sara},\n  title        = {Survey Sample International (SSI) Cultural Tastes Survey},\n  year         = {2012},\n  howpublished = {\\url{https://github.com/omarlizardo/SSI-2012}},\n  note         = {Accessed: [Date]}\n}"
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Survey Sample International 2012 Cultural Tastes Dataset",
+    "section": "License",
+    "text": "License\nThis dataset is distributed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. You are free to share, copy, redistribute, and adapt the material for any purpose, even commercially, as long as appropriate credit is given."
+  },
+  {
+    "objectID": "download.html",
+    "href": "download.html",
+    "title": "Data Download & Quick Start",
+    "section": "",
+    "text": "The cleaned and fully labeled SSI-2012 dataset is available for download in several standard formats, ensuring seamless integration with R, Python, Stata, SPSS, Excel, and other tools."
+  },
+  {
+    "objectID": "download.html#download-links",
+    "href": "download.html#download-links",
+    "title": "Data Download & Quick Start",
+    "section": "Download Links",
+    "text": "Download Links\nClick on any of the buttons below to download the cleaned dataset (404 variables, 2,276 rows) in your preferred format:\n\n📊 Download CSV (Self-Documenting / Text) 🔢 Download CSV (Numeric Coded) 📦 Download R RDS Format Stata Download Stata .DTA 💾 Download SPSS .SAV"
+  },
+  {
+    "objectID": "download.html#formats-explained",
+    "href": "download.html#formats-explained",
+    "title": "Data Download & Quick Start",
+    "section": "Formats Explained",
+    "text": "Formats Explained\n\n1. CSV Formats\n\nSelf-Documenting CSV (ssi2012_cleaned.csv): Best for general spreadsheet users, Tableau, PowerBI, or quick Python analysis. All categorical and ordinal variables (like music tastes, gender, and education) are written directly as their text descriptions (e.g. \"like\", \"dislike\", \"female\").\nNumeric Coded CSV (ssi2012_cleaned_coded.csv): Best for running models in Python, R, or other languages where you want raw numeric codes (e.g., 1, 2) rather than text strings. You can map codes using the Interactive Codebook.\n\n\n\n2. R Serialized RDS Format (ssi2012_cleaned.rds)\n\nPreserves all native Stata attributes, variable labels, and original value labels as R factor levels or haven_labelled vectors. Reading this in R preserves the full richness of the survey metadata automatically.\n\n\n\n3. Stata DTA Format (ssi2012_cleaned.dta)\n\nContains fully embedded variable labels (such as “Census region” or “Census division”) and value labels (e.g. 1 = White, 2 = Black, etc.), fully compatible with Stata 13+.\n\n\n\n4. SPSS SAV Format (ssi2012_cleaned.sav)\n\nPreserves variable labels and value labels, making it immediately ready for analysis in SPSS."
+  },
+  {
+    "objectID": "download.html#quick-start-loading-snippets",
+    "href": "download.html#quick-start-loading-snippets",
+    "title": "Data Download & Quick Start",
+    "section": "Quick Start Loading Snippets",
+    "text": "Quick Start Loading Snippets\nYou can load the cleaned dataset directly into your environment using a single line of code in R, Python, or Stata.\n\nR (RDS / CSV / DTA)Python (Pandas)Stata\n\n\n# --- Load native R format (preserves labels and classes) ---\ndf &lt;- readRDS(\"data/clean/ssi2012_cleaned.rds\")\n\n# --- Load general self-documenting CSV ---\nlibrary(readr)\ndf_csv &lt;- read_csv(\"data/clean/ssi2012_cleaned.csv\")\n\n# --- Load Stata DTA format ---\nlibrary(haven)\ndf_stata &lt;- read_dta(\"data/clean/ssi2012_cleaned.dta\")\n\n# --- Load SPSS SAV format ---\ndf_spss &lt;- read_sav(\"data/clean/ssi2012_cleaned.sav\")\n\n\nimport pandas as pd\n\n# --- Load general self-documenting CSV ---\ndf = pd.read_csv(\"data/clean/ssi2012_cleaned.csv\")\n\n# --- Load Numeric Coded CSV ---\ndf_coded = pd.read_csv(\"data/clean/ssi2012_cleaned_coded.csv\")\n\n# --- Load Stata DTA format (reads embedded value labels if convert_categoricals=True) ---\ndf_stata = pd.read_stata(\"data/clean/ssi2012_cleaned.dta\")\n\n# --- Load SPSS SAV format ---\n# Requires: pip install pyreadstat\ndf_spss = pd.read_spss(\"data/clean/ssi2012_cleaned.sav\")\n\n\n* --- Load cleaned Stata DTA dataset ---\nuse \"data/clean/ssi2012_cleaned.dta\", clear\n\n* --- Describe variables and look at labels ---\ndescribe\ntabulate classicaltaste"
+  }
+]

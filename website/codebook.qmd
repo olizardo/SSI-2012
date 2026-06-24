@@ -1,0 +1,73 @@
+---
+title: "Interactive Codebook"
+---
+
+This interactive codebook provides detailed information on all **404 variables** in the cleaned SSI-2012 dataset. You can search, filter, and sort variables by name, description, data type, or value categories. 
+
+Use the search bar on the top-right to find specific terms (e.g., searching "jazz", "income", "female", or "concur"), or filter columns directly.
+
+```{r}
+#| label: tbl-codebook
+#| echo: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+
+# Check if the codebook file has been generated
+metadata_path <- "../data/clean/ssi2012_codebook_metadata.rds"
+
+if (file.exists(metadata_path)) {
+  metadata <- readRDS(metadata_path)
+} else {
+  # Fallback if scripts haven't run yet during initial setup
+  metadata <- tibble(
+    Variable = "Please run scripts/generate_codebook.R first",
+    Label = "No metadata found",
+    Type = "-",
+    Categories = "-",
+    Valid_N = 0,
+    Missing_N = 0,
+    Missing_Pct = 0
+  )
+}
+
+# Render with DT if available, otherwise fallback to standard kable
+if (requireNamespace("DT", quietly = TRUE)) {
+  DT::datatable(
+    metadata,
+    filter = "top",
+    rownames = FALSE,
+    options = list(
+      pageLength = 25,
+      lengthMenu = c(10, 25, 50, 100),
+      searchHighlight = TRUE,
+      columnDefs = list(
+        list(width = '15%', targets = 0),
+        list(width = '30%', targets = 1),
+        list(width = '15%', targets = 2),
+        list(width = '25%', targets = 3),
+        list(className = 'dt-center', targets = c(4, 5, 6))
+      )
+    ),
+    colnames = c("Variable Name", "Description / Label", "Data Type", "Value Codes / Categories", "Valid N", "Missing N", "Missing %")
+  )
+} else {
+  # Simple markdown table fallback
+  knitr::kable(metadata)
+}
+```
+
+---
+
+## Column Descriptions in the Metadata
+
+The table above contains the following columns for each variable:
+
+1. **Variable Name**: The short name of the column in the dataset (e.g., `classicaltaste`, `female`).
+2. **Description / Label**: A plain-English explanation of what the variable represents.
+3. **Data Type**: Whether the variable is `Categorical (Labelled)`, `Numeric`, `Character (Text)`, or a `Binary Indicator (0/1)`.
+4. **Value Codes / Categories**: For categorical and binary variables, this column displays the numeric codes and their corresponding text meanings (e.g., `1 = like; 2 = dislike`). For numeric columns, it displays the valid range.
+5. **Valid N**: The number of non-missing observations (out of 2,276 total).
+6. **Missing N**: The number of missing (`NA`) observations.
+7. **Missing %**: The percentage of respondents with missing values for that variable.

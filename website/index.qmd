@@ -1,0 +1,81 @@
+---
+title: "Survey Sample International 2012 Cultural Tastes Dataset"
+---
+
+::: {.hero-banner}
+# Survey Sample International (SSI) 2012 Dataset
+### Cultural Tastes, Social Demographics, and Aesthetic Perceptions of Americans
+**Collected by Omar Lizardo & Sara Skiles**
+:::
+
+## Overview
+
+Welcome to the repository and documentation website hosting the **Survey Sample International 2012 (SSI-2012)** dataset. This comprehensive dataset was collected by **Omar Lizardo** (UCLA, formerly University of Notre Dame) and **Sara Skiles** (formerly University of Notre Dame) as part of a national sociological study investigating the cultural tastes, preferences, social stratification, and aesthetic perceptions of Americans.
+
+This dataset provides a rich public resource for researchers, students, and practitioners interested in the sociology of culture, consumption practices, and social demographics.
+
+---
+
+## Dataset Scope & Key Topics
+
+The SSI-2012 dataset covers a wide array of cultural, aesthetic, and demographic measures from a national sample of **2,276 Americans**:
+
+### 1. Music Genres and Preferences
+* **Genre Tastes**: 1–4 ordinal rating of liking/disliking for **20 distinct music genres** (ranging from Classical, Opera, and Jazz to Bluegrass, Hip-Hop, Indie, and Heavy Metal).
+* **Listening History**: Binary check-all-that-apply indicators representing whether the respondent listened to each of the 20 genres in the past month.
+* **Favorite Genre**: A single categorical measure identifying the respondent's favorite genre among all 20 options.
+
+### 2. Cultural Stereotypes: Typical Fan Characteristics
+* A massive, multi-dimensional grid of **320 variables** (20 genres × 16 social characteristics) capturing the respondent's perceptions of the "typical fans" of each music genre. 
+* Social dimensions include gender, race/ethnicity, education, age, and social class (e.g., whether a typical fan is female, college-educated, white, working-class, etc.).
+
+### 3. Aesthetics & Painting Conformity Experiment
+* The survey embedded an experimental design measuring aesthetic judgments. Respondents were shown an abstract painting and asked for their first impressions (`taste1`).
+* They were then randomized into control and treatment groups and given social information about whether a reference group (varying in education and occupation) liked or disliked the painting (`alterlike`).
+* They were asked how similar they felt to that group (`similarity`) and then asked to re-evaluate the painting (`taste2`). This allows researchers to model social conformity, taste mobility, and symbolic boundary-drawing.
+
+### 4. Comprehensive Social Demographics
+* Detailed respondent-level demographics including:
+  * Gender, Age, and Census Region of Residence.
+  * Race/Ethnicity (self-reported and individual indicators).
+  * Education level (individual degree achievements and parents' college education status).
+  * Current employment status and detailed occupational categories.
+  * Pre-tax annual income and subjective social class self-identification.
+
+---
+
+## Dataset Cleanliness & Integrity
+
+This distribution contains data that has been **comprehensively cleaned and properly labeled** for immediate scientific use:
+* All complex regression factor scores, centered columns, centered interactions, and mathematical indices constructed specifically for publication drafts have been removed to preserve a clean, raw-variable schema.
+* All categorical and ordinal variables have embedded **Stata and SPSS value labels**, and are converted to standard **R factors** in the primary R format.
+* Variables have been documented in a fully automated, interactive data dictionary.
+
+---
+
+## Citation & Citation Guide
+
+If you use this dataset in a scientific publication, paper, presentation, or class project, please use the following citation:
+
+::: {.callout-note}
+## Recommended Citation
+Lizardo, Omar, and Sara Skiles. 2012. *Survey Sample International (SSI) Cultural Tastes Survey*. [Dataset]. Distributed by [Insert Repo Link].
+:::
+
+For LaTeX users, here is the BibTeX entry:
+
+```bibtex
+@misc{lizardo_skiles_2012,
+  author       = {Lizardo, Omar and Skiles, Sara},
+  title        = {Survey Sample International (SSI) Cultural Tastes Survey},
+  year         = {2012},
+  howpublished = {\url{https://github.com/omarlizardo/SSI-2012}},
+  note         = {Accessed: [Date]}
+}
+```
+
+---
+
+## License
+
+This dataset is distributed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license. You are free to share, copy, redistribute, and adapt the material for any purpose, even commercially, as long as appropriate credit is given.

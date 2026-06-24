@@ -1,0 +1,405 @@
+Variable,Label,Type,Categories,Valid_N,Missing_N,Missing_Pct
+id,Respondent Unique Identifier,Numeric,Range: 1 to 2275,2275,1,0.04
+finished,"Survey finished status (0 = No, 1 = Yes)",Categorical (Labelled),some missing data = 0; complete record = 1,2275,1,0.04
+age,age cats,Categorical (Labelled),18 - 19 = 2; 20 - 24 = 3; 25 - 29 = 4; 30 - 34 = 5; 35 - 39 = 6; 40 - 44 = 7; 45 - 49 = 8; 50 - 59 = 9; 55 - 59 = 10; 60 - 64 = 11; 65 - 69 = 12; 70 - 74 = 13; 75 - 79 = 14; 80+ = 15,2274,2,0.09
+female,Are you male or female?,Categorical (Labelled),male = 0; female = 1,2274,2,0.09
+region,Census region,Categorical (Labelled),New Enlgnad = 1; Middle Atlantic = 2; Eastern Midwest = 3; Western Midwest = 4; South Atlantic = 5; East South = 6; West South = 7; Mountain West = 8; Pacific West = 9,2274,2,0.09
+raceeth,Which race/ethnicity group best describes you?,Categorical (Labelled),Asian = 1; Black = 2; Hispanic = 3; White = 4; >1 race = 5; other = 6,2274,2,0.09
+smartphone,are you taking this survey from a smart phone?,Categorical (Labelled),no = 0; yes = 1,2275,1,0.04
+nodipdeg,No diplomas or degrees,Categorical (Labelled),no = 0; yes = 1,2275,1,0.04
+hsged,"High school diploma, GED, or other equivalent",Categorical (Labelled),no = 0; yes = 1,2275,1,0.04
+somcol,"Some college, no degree",Categorical (Labelled),no = 0; yes = 1,2275,1,0.04
+aadeg,Associates degree,Categorical (Labelled),no = 0; yes = 1,2275,1,0.04
+bach,Bachelor's degree,Categorical (Labelled),no = 0; yes = 1,2275,1,0.04
+ma,Master's degree,Categorical (Labelled),no = 0; yes = 1,2275,1,0.04
+docprof,Professional or doctoral degree,Categorical (Labelled),no = 0; yes = 1,2275,1,0.04
+socloc,Respondent's Social Location,Categorical (Labelled),LCC = 1; ES = 2; CS = 3,2275,1,0.04
+major,"If you attended college, what as your major or field of study for your highest d",Character (Text),Free text responses,2276,0,0
+parented,Did either of your parents complete a BA?,Categorical (Labelled),parent no college = 0; parent college = 1,2275,1,0.04
+empstat,Which of the following best describes yoru current employment status?,Categorical (Labelled),"working, part time or full time, paid employee = 1; working, part time or full time, self emplooyed = 2; not working, currently enrolled in school = 3; not working, temporarily laid off = 4; not working, looking for work = 5; nto working, not looking for work = 6; not working, homemaker = 7; not working, retired = 8; not working, disabled = 9; not working, other = 10",2275,1,0.04
+occ,Which of the following most closely matches your current occupation (or your mos,Categorical (Labelled),"business and financial = 1; computer and matematical = 2; architecture = 3; engineering = 4; life, physical, and social science = 5; community and social service = 6; legal = 7; education, trianing and library = 8; art and design = 9; entertainment, sports, and media = 10; healthcare practitioner = 11; healthcare support = 12; protective services = 13; military = 14; food preparation and serving = 15; building and grounds cleaning/maintenance = 16; personal care and services = 17; sales = 18; office and administrative support = 19; farming, fishing, and forestry = 20; construction, installation, production, maintenance, and repair = 21; transportation and material moving = 22; full time caregiver inside the home = 23; other = 24",2275,1,0.04
+income,"What is your annual, pre-tax income from your job(s)?",Categorical (Labelled),"<$10,000 = 1; $10,000 - $19,999 = 2; $20,000 - $29,999 = 3; $30,000 - $39,999 = 4; $40,000 - $49,999 = 5; $50,000 - $59,999 = 6; $60,000 - $69,999 = 7; $70,000 - $79,999 = 8; $80,000 - $89,999 = 9; $90,000 - $99,999 = 10; $100,000 - $109,999 = 11; $110,000 - $119,999 = 12; $120,000 - $129,999 = 13; $130,000 - $139,999 = 14; $140,000 - $149,999 = 15; $150,000 - $159,999 = 16; $160,000 - $169,999 = 17; $170,000 - $179,999 = 18; $180,000 - $189,999 = 19; $190,000 - $199,999 = 20; $200,000 - $224,999 = 21; $225,000 - $249,999 = 22; $250,000+ = 23",2275,1,0.04
+percclass,Which of these do you think best describes you?,Categorical (Labelled),lower class = 1; working class = 2; middle class = 3; upper class = 4,2275,1,0.04
+asian,"Race/Ethnicity: Asian (0 = No, 1 = Yes)",Categorical (Labelled),Asian = 1,2274,2,0.09
+black,"Race/Ethnicity: Black (0 = No, 1 = Yes)",Categorical (Labelled),Black = 1,2274,2,0.09
+hisp,"Race/Ethnicity: Hispanic (0 = No, 1 = Yes)",Categorical (Labelled),Hispanic = 1,2274,2,0.09
+white,"Race/Ethnicity: White (0 = No, 1 = Yes)",Categorical (Labelled),White = 1,2274,2,0.09
+multirace,"Race/Ethnicity: More than one race (0 = No, 1 = Yes)",Categorical (Labelled),>1 race = 1,2274,2,0.09
+otherrace,"Race/Ethnicity: Other race (0 = No, 1 = Yes)",Categorical (Labelled),other race = 1,2274,2,0.09
+lower,"Self-described Class: Lower class (0 = No, 1 = Yes)",Categorical (Labelled),lower = 1,2275,1,0.04
+working,"Self-described Class: Working class (0 = No, 1 = Yes)",Categorical (Labelled),working = 1,2275,1,0.04
+middle,"Self-described Class: Middle class (0 = No, 1 = Yes)",Categorical (Labelled),middle = 1,2275,1,0.04
+high,"Self-described Class: Upper class (0 = No, 1 = Yes)",Categorical (Labelled),high = 1,2275,1,0.04
+taste1,Give us your first impression of this painting -- how much do you like it?,Categorical (Labelled),I like it very much = 1; I like it = 2; I like it just a little = 3; I neither like it nor dislike it = 4; I dislike it just a little = 5; I dislike it = 6; I dislike it very much = 7; I can't see the image = 98,2269,7,0.31
+similarity,Given only what you know about [these people]...how similar do you think you are,Categorical (Labelled),very similar = 1; somewhat similar = 2; just a little similar = 3; not very similar = 4; not at all similar = 5; NA control = 98,2093,183,8.04
+siminf,"When you thought about how similar you are to the people in thi sgroup, which fa",Categorical (Labelled),education and occupation = 1; opinion about the painting = 2; comination of both = 3; NA control = 98,1746,530,23.29
+taste2,Give us your final impression about this painting -- how much do you like it?,Categorical (Labelled),I like it very much = 1; I like it = 2; I like it just a little = 3; I neither like it nor dislike it = 4; I dislike it just a little = 5; I dislike it = 6; I dislike it very much = 7; I can't see the image = 98,2258,18,0.79
+alterjob,manipulation check: where do they work?,Categorical (Labelled),college or university = 1; restaurant = 2; financial investment firm = 3; NA control = 98,1736,540,23.73
+altered,manipulation check: what is their highest level of education?,Categorical (Labelled),high school diploma = 1; Bachelor's degree = 2; PhD = 3; NA control = 98,1736,540,23.73
+alterclass,REVISE LABELS TO SHARE,Categorical (Labelled),LCC alters = 1; ES alters = 2; CS alters = 3,2275,1,0.04
+altertaste,reference group's opinion of the painting,Categorical (Labelled),CONTROL = 0; LIKE = 1; DISLIKE = 2,2275,1,0.04
+control,Control group experimental ID,Categorical (Labelled),"experimental group = 0; Control group 1 (no reference group) = 1; Control group 2 (no occ/ed, gives taste) = 2",2275,1,0.04
+alterlike,Experimental Condition: reference group liked (1) or disliked (0) the painting,Categorical (Labelled),alters dislike = 0; alters like = 1,2093,183,8.04
+surprise,manipulation check:  was it surprising to you that the people in this group LIKE,Categorical (Labelled),very suprising = 1; somewhat surprising = 2; not at all surprising = 3; NA control = 98,1736,540,23.73
+classicaltaste,Classical taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+operataste,Opera taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+jazztaste,Jazz taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+bwaysttaste,Broadway/Show tunes taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+moodeztaste,Mood/Easy listening taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+bbandtaste,Big band taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+croldtaste,Classic rock/Oldies taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+countrytaste,Country taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+bluegtaste,Bluegrass taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+folktaste,Folk taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+hymgostaste,Hymns/Gospel taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+latspsaltaste,Latin/Spanish/Salsa taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+raphiphoptaste,Rap/Hip-hop taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+blurbtaste,Blues/R&B taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+reggaetaste,Reggae taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+toppoptaste,Top 40/Pop taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+controcktaste,Contemporary rock taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+indalttaste,Indie/Alternative rock taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+danclubtaste,Dance/Club taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+hvymtltaste,Heavy metal taste,Categorical (Labelled),like = 1; dislike = 2; neither like nor dislike = 3; I am not familiar with this type of music = 4,2264,12,0.53
+classicallis,Classical listen,Numeric,Range: 0 to 1,2264,12,0.53
+operalis,Opera listen,Numeric,Range: 0 to 1,2264,12,0.53
+jazzlis,Jazz listen,Numeric,Range: 0 to 1,2264,12,0.53
+bwaystlis,Broadway/Show tunes listen,Numeric,Range: 0 to 1,2264,12,0.53
+moodezlis,Mood/Easy listening listen,Numeric,Range: 0 to 1,2264,12,0.53
+bbandlis,Big band listen,Numeric,Range: 0 to 1,2264,12,0.53
+croldlis,Classic rock/Oldies listen,Numeric,Range: 0 to 1,2264,12,0.53
+countrylis,Country listen,Numeric,Range: 0 to 1,2264,12,0.53
+blueglis,Bluegrass listen,Numeric,Range: 0 to 1,2264,12,0.53
+folklis,Folk listen,Numeric,Range: 0 to 1,2264,12,0.53
+hymgoslis,Hymns/Gospel listen,Numeric,Range: 0 to 1,2264,12,0.53
+latspsallis,Latin/Spanish/Salsa listen,Numeric,Range: 0 to 1,2264,12,0.53
+raphiphoplis,Rap/Hip-hop listen,Numeric,Range: 0 to 1,2264,12,0.53
+blurblis,Blues/R&B listen,Numeric,Range: 0 to 1,2264,12,0.53
+reggaelis,Reggae listen,Numeric,Range: 0 to 1,2264,12,0.53
+toppoplis,Top 40/Pop listen,Numeric,Range: 0 to 1,2264,12,0.53
+controcklis,Contemporary rock listen,Numeric,Range: 0 to 1,2264,12,0.53
+indaltlis,Indie/Alternative rock listen,Numeric,Range: 0 to 1,2264,12,0.53
+danclublis,Dance/Club listen,Numeric,Range: 0 to 1,2264,12,0.53
+hvymtllis,Heavy metal listen,Numeric,Range: 0 to 1,2264,12,0.53
+nonelis,I have not listened to any of these in the last month,Numeric,Range: 0 to 1,2264,12,0.53
+favgen,"Of these types of music, which is your favorite?",Categorical (Labelled),"Classical = 1; Opera = 2; Jazz = 3; Broadway or Show tunes = 4; Mood/Easy listening = 5; Big band = 6; Classic rock/Oldies = 7; Country = 8; Bluegrass = 9; Folk = 10; Hymns or Gospel = 11; Latin, Spanish or Salsa = 12; Rap/Hip-hop = 13; Blues/R&B = 14; Reggae = 15; Top 40/Pop = 16; Contemporary Rock = 17; Indie/Alternative Rock = 18; Dance/Club = 19; Heavy metal = 20",2264,12,0.53
+classicalfemale,Typical Classical music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicalmale,Typical Classical music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicalwhite,Typical Classical music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicalblack,Typical Classical music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicalhisp,Typical Classical music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicalasian,Typical Classical music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicalgrad,Typical Classical music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicalnocol,Typical Classical music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicalyoung,Typical Classical music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+classicalmidage,Typical Classical music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+classicalold,Typical Classical music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+classicallc,Typical Classical music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicalwc,Typical Classical music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicalmc,Typical Classical music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicaluc,Typical Classical music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+classicalnone,Typical Classical music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+operafemale,Typical Opera music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operamale,Typical Opera music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operawhite,Typical Opera music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operablack,Typical Opera music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operahisp,Typical Opera music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operaasian,Typical Opera music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operagrad,Typical Opera music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operanocol,Typical Opera music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operayoung,Typical Opera music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+operamidage,Typical Opera music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+operaold,Typical Opera music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+operalc,Typical Opera music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operawc,Typical Opera music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operamc,Typical Opera music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operauc,Typical Opera music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+operanone,Typical Opera music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+jazzfemale,Typical Jazz music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazzmale,Typical Jazz music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazzwhite,Typical Jazz music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazzblack,Typical Jazz music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazzhisp,Typical Jazz music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazzasian,Typical Jazz music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazzgrad,Typical Jazz music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazznocol,Typical Jazz music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazzyoung,Typical Jazz music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+jazzmidage,Typical Jazz music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+jazzold,Typical Jazz music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+jazzlc,Typical Jazz music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazzwc,Typical Jazz music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazzmc,Typical Jazz music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazzuc,Typical Jazz music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+jazznone,Typical Jazz music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+bwaystfemale,Typical Bwayst music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaystmale,Typical Bwayst music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaystwhite,Typical Bwayst music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaystblack,Typical Bwayst music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaysthisp,Typical Bwayst music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaystasian,Typical Bwayst music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaystgrad,Typical Bwayst music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaystnocol,Typical Bwayst music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaystyoung,Typical Bwayst music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+bwaystmidage,Typical Bwayst music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+bwaystold,Typical Bwayst music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+bwaystlc,Typical Bwayst music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaystwc,Typical Bwayst music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaystmc,Typical Bwayst music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaystuc,Typical Bwayst music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2274,2,0.09
+bwaystnone,Typical Bwayst music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+moodezfemale,Typical Moodez music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodezmale,Typical Moodez music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodezwhite,Typical Moodez music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodezblack,Typical Moodez music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodezhisp,Typical Moodez music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodezasian,Typical Moodez music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodezgrad,Typical Moodez music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodeznocol,Typical Moodez music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodezyoung,Typical Moodez music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+moodezmidage,Typical Moodez music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+moodezold,Typical Moodez music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+moodezlc,Typical Moodez music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodezwc,Typical Moodez music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodezmc,Typical Moodez music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodezuc,Typical Moodez music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+moodeznone,Typical Moodez music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+bbandfemale,Typical Bband music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbandmale,Typical Bband music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbandwhite,Typical Bband music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbandblack,Typical Bband music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbandhisp,Typical Bband music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbandasian,Typical Bband music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbandgrad,Typical Bband music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbandnocol,Typical Bband music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbandyoung,Typical Bband music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+bbandmidage,Typical Bband music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+bbandold,Typical Bband music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+bbandlc,Typical Bband music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbandwc,Typical Bband music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbandmc,Typical Bband music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbanduc,Typical Bband music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+bbandnone,Typical Bband music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+croldfemale,Typical Crold music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+croldmale,Typical Crold music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+croldwhite,Typical Crold music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+croldblack,Typical Crold music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+croldhisp,Typical Crold music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+croldasian,Typical Crold music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+croldgrad,Typical Crold music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+croldnocol,Typical Crold music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+croldyoung,Typical Crold music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+croldmidage,Typical Crold music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+croldold,Typical Crold music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+croldlc,Typical Crold music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+croldwc,Typical Crold music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+croldmc,Typical Crold music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+crolduc,Typical Crold music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+croldnone,Typical Crold music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+countryfemale,Typical Country music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countrymale,Typical Country music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countrywhite,Typical Country music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countryblack,Typical Country music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countryhisp,Typical Country music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countryasian,Typical Country music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countrygrad,Typical Country music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countrynocol,Typical Country music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countryyoung,Typical Country music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+countrymidage,Typical Country music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+countryold,Typical Country music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+countrylc,Typical Country music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countrywc,Typical Country music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countrymc,Typical Country music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countryuc,Typical Country music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2269,7,0.31
+countrynone,Typical Country music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+bluegfemale,Typical Blueg music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+bluegmale,Typical Blueg music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+bluegwhite,Typical Blueg music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+bluegblack,Typical Blueg music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+blueghisp,Typical Blueg music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+bluegasian,Typical Blueg music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+blueggrad,Typical Blueg music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+bluegnocol,Typical Blueg music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+bluegyoung,Typical Blueg music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+bluegmidage,Typical Blueg music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+bluegold,Typical Blueg music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+blueglc,Typical Blueg music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+bluegwc,Typical Blueg music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+bluegmc,Typical Blueg music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+blueguc,Typical Blueg music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+bluegnone,Typical Blueg music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+folkfemale,Typical Folk music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folkmale,Typical Folk music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folkwhite,Typical Folk music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folkblack,Typical Folk music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folkhisp,Typical Folk music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folkasian,Typical Folk music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folkgrad,Typical Folk music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folknocol,Typical Folk music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folkyoung,Typical Folk music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+folkmidage,Typical Folk music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+folkold,Typical Folk music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+folklc,Typical Folk music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folkwc,Typical Folk music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folkmc,Typical Folk music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folkuc,Typical Folk music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+folknone,Typical Folk music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+hymgosfemale,Typical Hymgos music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgosmale,Typical Hymgos music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgoswhite,Typical Hymgos music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgosblack,Typical Hymgos music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgoshisp,Typical Hymgos music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgosasian,Typical Hymgos music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgosgrad,Typical Hymgos music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgosnocol,Typical Hymgos music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgosyoung,Typical Hymgos music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+hymgosmidage,Typical Hymgos music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+hymgosold,Typical Hymgos music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+hymgoslc,Typical Hymgos music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgoswc,Typical Hymgos music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgosmc,Typical Hymgos music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgosuc,Typical Hymgos music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+hymgosnone,Typical Hymgos music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+latspsalfemale,Typical Latspsal music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsalmale,Typical Latspsal music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsalwhite,Typical Latspsal music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsalblack,Typical Latspsal music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsalhisp,Typical Latspsal music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsalasian,Typical Latspsal music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsalgrad,Typical Latspsal music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsalnocol,Typical Latspsal music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsalyoung,Typical Latspsal music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+latspsalmidage,Typical Latspsal music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+latspsalold,Typical Latspsal music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+latspsallc,Typical Latspsal music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsalwc,Typical Latspsal music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsalmc,Typical Latspsal music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsaluc,Typical Latspsal music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2266,10,0.44
+latspsalnone,Typical Latspsal music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+raphiphopfemale,Typical Raphiphop music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphopmale,Typical Raphiphop music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphopwhite,Typical Raphiphop music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphopblack,Typical Raphiphop music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphophisp,Typical Raphiphop music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphopasian,Typical Raphiphop music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphopgrad,Typical Raphiphop music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphopnocol,Typical Raphiphop music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphopyoung,Typical Raphiphop music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+raphiphopmidage,Typical Raphiphop music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+raphiphopold,Typical Raphiphop music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+raphiphoplc,Typical Raphiphop music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphopwc,Typical Raphiphop music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphopmc,Typical Raphiphop music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphopuc,Typical Raphiphop music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+raphiphopnone,Typical Raphiphop music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+blurbfemale,Typical Blurb music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbmale,Typical Blurb music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbwhite,Typical Blurb music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbblack,Typical Blurb music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbhisp,Typical Blurb music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbasian,Typical Blurb music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbgrad,Typical Blurb music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbnocol,Typical Blurb music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbyoung,Typical Blurb music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+blurbmidage,Typical Blurb music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+blurbold,Typical Blurb music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+blurblc,Typical Blurb music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbwc,Typical Blurb music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbmc,Typical Blurb music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbuc,Typical Blurb music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+blurbnone,Typical Blurb music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+reggaefemale,Typical Reggae music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaemale,Typical Reggae music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaewhite,Typical Reggae music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaeblack,Typical Reggae music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaehisp,Typical Reggae music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaeasian,Typical Reggae music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaegrad,Typical Reggae music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaenocol,Typical Reggae music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaeyoung,Typical Reggae music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+reggaemidage,Typical Reggae music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+reggaeold,Typical Reggae music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+reggaelc,Typical Reggae music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaewc,Typical Reggae music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaemc,Typical Reggae music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaeuc,Typical Reggae music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+reggaenone,Typical Reggae music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+toppopfemale,Typical Toppop music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppopmale,Typical Toppop music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppopwhite,Typical Toppop music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppopblack,Typical Toppop music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppophisp,Typical Toppop music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppopasian,Typical Toppop music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppopgrad,Typical Toppop music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppopnocol,Typical Toppop music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppopyoung,Typical Toppop music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+toppopmidage,Typical Toppop music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+toppopold,Typical Toppop music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+toppoplc,Typical Toppop music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppopwc,Typical Toppop music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppopmc,Typical Toppop music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppopuc,Typical Toppop music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2265,11,0.48
+toppopnone,Typical Toppop music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+controckfemale,Typical Controck music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controckmale,Typical Controck music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controckwhite,Typical Controck music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controckblack,Typical Controck music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controckhisp,Typical Controck music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controckasian,Typical Controck music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controckgrad,Typical Controck music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controcknocol,Typical Controck music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controckyoung,Typical Controck music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+controckmidage,Typical Controck music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+controckold,Typical Controck music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+controcklc,Typical Controck music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controckwc,Typical Controck music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controckmc,Typical Controck music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controckuc,Typical Controck music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+controcknone,Typical Controck music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+indaltfemale,Typical Indalt music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indaltmale,Typical Indalt music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indaltwhite,Typical Indalt music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indaltblack,Typical Indalt music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indalthisp,Typical Indalt music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indaltasian,Typical Indalt music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indaltgrad,Typical Indalt music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indaltnocol,Typical Indalt music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indaltyoung,Typical Indalt music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+indaltmidage,Typical Indalt music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+indaltold,Typical Indalt music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+indaltlc,Typical Indalt music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indaltwc,Typical Indalt music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indaltmc,Typical Indalt music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indaltuc,Typical Indalt music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+indaltnone,Typical Indalt music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+danclubfemale,Typical Danclub music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubmale,Typical Danclub music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubwhite,Typical Danclub music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubblack,Typical Danclub music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubhisp,Typical Danclub music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubasian,Typical Danclub music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubgrad,Typical Danclub music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubnocol,Typical Danclub music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubyoung,Typical Danclub music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+danclubmidage,Typical Danclub music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+danclubold,Typical Danclub music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+danclublc,Typical Danclub music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubwc,Typical Danclub music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubmc,Typical Danclub music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubuc,Typical Danclub music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+danclubnone,Typical Danclub music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+hvymtlfemale,Typical Hvymtl music fans: female,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtlmale,Typical Hvymtl music fans: male,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtlwhite,Typical Hvymtl music fans: white,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtlblack,Typical Hvymtl music fans: black,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtlhisp,Typical Hvymtl music fans: hisp,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtlasian,Typical Hvymtl music fans: asian,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtlgrad,Typical Hvymtl music fans: college graduate,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtlnocol,Typical Hvymtl music fans: did not attend college,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtlyoung,Typical Hvymtl music fans: young,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+hvymtlmidage,Typical Hvymtl music fans: middle aged,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+hvymtlold,Typical Hvymtl music fans: old,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04
+hvymtllc,Typical Hvymtl music fans: lower class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtlwc,Typical Hvymtl music fans: working class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtlmc,Typical Hvymtl music fans: middle class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtluc,Typical Hvymtl music fans: upper class,Binary Indicator (0/1),0 = No; 1 = Yes,2261,15,0.66
+hvymtlnone,Typical Hvymtl music fans: none of these,Binary Indicator (0/1),0 = No; 1 = Yes,2275,1,0.04

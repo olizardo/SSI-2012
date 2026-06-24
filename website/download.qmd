@@ -1,0 +1,92 @@
+---
+title: "Data Download & Quick Start"
+---
+
+The cleaned and fully labeled SSI-2012 dataset is available for download in several standard formats, ensuring seamless integration with R, Python, Stata, SPSS, Excel, and other tools.
+
+## Download Links
+
+Click on any of the buttons below to download the cleaned dataset (404 variables, 2,276 rows) in your preferred format:
+
+::: {style="margin: 2rem 0;"}
+<a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.csv" class="download-btn download-csv">📊 Download CSV (Self-Documenting / Text)</a>
+<a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned_coded.csv" class="download-btn download-csv">🔢 Download CSV (Numeric Coded)</a>
+<a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.rds" class="download-btn download-rds">📦 Download R RDS Format</a>
+<a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.dta" class="download-btn download-dta">Stata Download Stata .DTA</a>
+<a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.sav" class="download-btn download-sav">💾 Download SPSS .SAV</a>
+:::
+
+---
+
+## Formats Explained
+
+### 1. CSV Formats
+* **Self-Documenting CSV (`ssi2012_cleaned.csv`)**: Best for general spreadsheet users, Tableau, PowerBI, or quick Python analysis. All categorical and ordinal variables (like music tastes, gender, and education) are written directly as their **text descriptions** (e.g. `"like"`, `"dislike"`, `"female"`).
+* **Numeric Coded CSV (`ssi2012_cleaned_coded.csv`)**: Best for running models in Python, R, or other languages where you want raw numeric codes (e.g., `1`, `2`) rather than text strings. You can map codes using the [Interactive Codebook](codebook.qmd).
+
+### 2. R Serialized RDS Format (`ssi2012_cleaned.rds`)
+* Preserves all native Stata attributes, variable labels, and original value labels as R factor levels or `haven_labelled` vectors. Reading this in R preserves the full richness of the survey metadata automatically.
+
+### 3. Stata DTA Format (`ssi2012_cleaned.dta`)
+* Contains fully embedded variable labels (such as "Census region" or "Census division") and value labels (e.g. `1 = White`, `2 = Black`, etc.), fully compatible with Stata 13+.
+
+### 4. SPSS SAV Format (`ssi2012_cleaned.sav`)
+* Preserves variable labels and value labels, making it immediately ready for analysis in SPSS.
+
+---
+
+## Quick Start Loading Snippets
+
+You can load the cleaned dataset directly into your environment using a single line of code in R, Python, or Stata.
+
+::: {.panel-tabset}
+
+### R (RDS / CSV / DTA)
+
+```r
+# --- Load native R format (preserves labels and classes) ---
+df <- readRDS("data/clean/ssi2012_cleaned.rds")
+
+# --- Load general self-documenting CSV ---
+library(readr)
+df_csv <- read_csv("data/clean/ssi2012_cleaned.csv")
+
+# --- Load Stata DTA format ---
+library(haven)
+df_stata <- read_dta("data/clean/ssi2012_cleaned.dta")
+
+# --- Load SPSS SAV format ---
+df_spss <- read_sav("data/clean/ssi2012_cleaned.sav")
+```
+
+### Python (Pandas)
+
+```python
+import pandas as pd
+
+# --- Load general self-documenting CSV ---
+df = pd.read_csv("data/clean/ssi2012_cleaned.csv")
+
+# --- Load Numeric Coded CSV ---
+df_coded = pd.read_csv("data/clean/ssi2012_cleaned_coded.csv")
+
+# --- Load Stata DTA format (reads embedded value labels if convert_categoricals=True) ---
+df_stata = pd.read_stata("data/clean/ssi2012_cleaned.dta")
+
+# --- Load SPSS SAV format ---
+# Requires: pip install pyreadstat
+df_spss = pd.read_spss("data/clean/ssi2012_cleaned.sav")
+```
+
+### Stata
+
+```stata
+* --- Load cleaned Stata DTA dataset ---
+use "data/clean/ssi2012_cleaned.dta", clear
+
+* --- Describe variables and look at labels ---
+describe
+tabulate classicaltaste
+```
+
+:::
