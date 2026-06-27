@@ -57,7 +57,7 @@ If you use this dataset in a scientific publication, paper, presentation, or cla
 
 ::: {.callout-note}
 ## Recommended Citation
-Lizardo, Omar, and Sara Skiles. 2012. *Survey Sample International (SSI) Cultural Tastes Survey*. [Dataset]. Distributed by [Insert Repo Link].
+Lizardo, Omar, and Sara Skiles. 2012. *Survey Sample International (SSI) Cultural Tastes Survey*. [Dataset]. Distributed by [https://github.com/olizardo/SSI-2012](https://github.com/olizardo/SSI-2012).
 :::
 
 For LaTeX users, here is the BibTeX entry:
