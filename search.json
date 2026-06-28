@@ -32,7 +32,7 @@
     "href": "index.html#citation-citation-guide",
     "title": "Survey Sample International 2012 Cultural Tastes Dataset",
     "section": "Citation & Citation Guide",
-    "text": "Citation & Citation Guide\nIf you use this dataset in a scientific publication, paper, presentation, or class project, please use the following citation:\n\n\n\n\n\n\nNoteRecommended Citation\n\n\n\nLizardo, Omar, and Sara Skiles. 2012. Survey Sample International (SSI) Cultural Tastes Survey. [Dataset]. Distributed by [Insert Repo Link].\n\n\nFor LaTeX users, here is the BibTeX entry:\n@misc{lizardo_skiles_2012,\n  author       = {Lizardo, Omar and Skiles, Sara},\n  title        = {Survey Sample International (SSI) Cultural Tastes Survey},\n  year         = {2012},\n  howpublished = {\\url{https://github.com/omarlizardo/SSI-2012}},\n  note         = {Accessed: [Date]}\n}"
+    "text": "Citation & Citation Guide\nIf you use this dataset in a scientific publication, paper, presentation, or class project, please use the following citation:\n\n\n\n\n\n\nNoteRecommended Citation\n\n\n\nLizardo, Omar, and Sara Skiles. 2012. Survey Sample International (SSI) Cultural Tastes Survey. [Dataset]. Distributed by https://github.com/olizardo/SSI-2012.\n\n\nFor LaTeX users, here is the BibTeX entry:\n@misc{lizardo_skiles_2012,\n  author       = {Lizardo, Omar and Skiles, Sara},\n  title        = {Survey Sample International (SSI) Cultural Tastes Survey},\n  year         = {2012},\n  howpublished = {\\url{https://github.com/omarlizardo/SSI-2012}},\n  note         = {Accessed: [Date]}\n}"
   },
   {
     "objectID": "index.html#license",
