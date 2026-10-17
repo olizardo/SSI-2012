@@ -1,6 +1,6 @@
 Variable,Label,Type,Categories,Valid_N,Missing_N,Missing_Pct
 id,Respondent Unique Identifier,Numeric,Range: 1 to 2275,2275,0,0
-finished,"Survey finished status (0 = No, 1 = Yes)",Categorical (Labelled),some missing data = 0; complete record = 1,2275,0,0
+finished,"Survey completion status (0 = some missing data, 1 = complete record)",Categorical (Labelled),some missing data = 0; complete record = 1,2275,0,0
 age,age cats,Categorical (Labelled),18 - 19 = 2; 20 - 24 = 3; 25 - 29 = 4; 30 - 34 = 5; 35 - 39 = 6; 40 - 44 = 7; 45 - 49 = 8; 50 - 59 = 9; 55 - 59 = 10; 60 - 64 = 11; 65 - 69 = 12; 70 - 74 = 13; 75 - 79 = 14; 80+ = 15,2274,1,0.04
 female,Are you male or female?,Categorical (Labelled),male = 0; female = 1,2274,1,0.04
 region,Census region,Categorical (Labelled),New Enlgnad = 1; Middle Atlantic = 2; Eastern Midwest = 3; Western Midwest = 4; South Atlantic = 5; East South = 6; West South = 7; Mountain West = 8; Pacific West = 9,2274,1,0.04

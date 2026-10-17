@@ -60,7 +60,7 @@ extract_metadata <- function(col_name, col_data) {
   
   # Enrich other empty or poorly labeled variables
   if (col_name == "id") lbl_str <- "Respondent Unique Identifier"
-  if (col_name == "finished") lbl_str <- "Survey finished status (0 = No, 1 = Yes)"
+  if (col_name == "finished") lbl_str <- "Survey completion status (0 = some missing data, 1 = complete record)"
   if (col_name == "control") lbl_str <- "Control group experimental ID"
   if (col_name == "alterlike") lbl_str <- "Experimental Condition: reference group liked (1) or disliked (0) the painting"
   

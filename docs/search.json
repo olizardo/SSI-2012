@@ -32,14 +32,14 @@
     "href": "index.html#dataset-cleanliness-integrity",
     "title": "Survey Sample International 2012 Cultural Tastes Dataset",
     "section": "Dataset Cleanliness & Integrity",
-    "text": "Dataset Cleanliness & Integrity\nThis distribution contains data that has been comprehensively cleaned and properly labeled for immediate scientific use: -All categorical and ordinal variables have embedded Stata and SPSS value labels, and are converted to standard R factors in the primary R format. -Variables have been documented in a fully automated, interactive data dictionary. —"
+    "text": "Dataset Cleanliness & Integrity\nThis distribution contains data that has been comprehensively cleaned and properly labeled for immediate scientific use: - Categorical and ordinal variables carry embedded Stata and SPSS value labels. The R format keeps those labels, and the descriptive CSV writes them as text. - Variables have been documented in a fully automated, interactive data dictionary. —"
   },
   {
     "objectID": "index.html#citation-citation-guide",
     "href": "index.html#citation-citation-guide",
     "title": "Survey Sample International 2012 Cultural Tastes Dataset",
     "section": "Citation & Citation Guide",
-    "text": "Citation & Citation Guide\nIf you use this dataset in a scientific publication, paper, presentation, or class project, please use the following citation:\n\n\n\n\n\n\nNoteRecommended Citation\n\n\n\nLizardo, Omar, and Sara Skiles. 2012. Survey Sample International (SSI) Cultural Tastes Survey. [Dataset]. Distributed by [Insert Repo Link].\n\n\nFor LaTeX users, here is the BibTeX entry:\n@misc{lizardo_skiles_2012,\n  author       = {Lizardo, Omar and Skiles, Sara},\n  title        = {Survey Sample International (SSI) Cultural Tastes Survey},\n  year         = {2012},\n  howpublished = {\\url{https://github.com/omarlizardo/SSI-2012}},\n  note         = {Accessed: [Date]}\n}"
+    "text": "Citation & Citation Guide\nIf you use this dataset in a scientific publication, paper, presentation, or class project, please use the following citation:\n\n\n\n\n\n\nNoteRecommended Citation\n\n\n\nLizardo, Omar, and Sara Skiles. 2012. Survey Sample International (SSI) Cultural Tastes Survey. [Dataset]. Distributed by GitHub at https://github.com/olizardo/SSI-2012.\n\n\nFor LaTeX users, here is the BibTeX entry:\n@misc{lizardo_skiles_2012,\n  author       = {Lizardo, Omar and Skiles, Sara},\n  title        = {Survey Sample International (SSI) Cultural Tastes Survey},\n  year         = {2012},\n  howpublished = {\\url{https://github.com/olizardo/SSI-2012}}\n}"
   },
   {
     "objectID": "index.html#license",
@@ -53,14 +53,14 @@
     "href": "download.html",
     "title": "Data Download & Quick Start",
     "section": "",
-    "text": "The cleaned and fully labeled SSI-2012 dataset is available for download in several standard formats, ensuring seamless integration with R, Python, Stata, SPSS, Excel, and other tools."
+    "text": "The cleaned and fully labeled SSI-2012 dataset is available for download in several standard formats, ensuring seamless integration with R, Python, Stata, SPSS, spreadsheet software, and other tools."
   },
   {
     "objectID": "download.html#download-links",
     "href": "download.html#download-links",
     "title": "Data Download & Quick Start",
     "section": "Download Links",
-    "text": "Download Links\nClick on any of the buttons below to download the cleaned dataset (404 variables, 2,275 rows) in your preferred format:\n\n📊 Download CSV (Self-Documenting / Text) 🔢 Download CSV (Numeric Coded) 📦 Download R RDS Format Stata Download Stata .DTA 💾 Download SPSS .SAV"
+    "text": "Download Links\nClick on any of the buttons below to download the cleaned dataset (404 variables, 2,275 rows) in your preferred format:\n\n📊 Download CSV (Self-Documenting / Text) 🔢 Download CSV (Numeric Coded) 📦 Download R RDS Format 📄 Download Stata .DTA 💾 Download SPSS .SAV"
   },
   {
     "objectID": "download.html#formats-explained",
@@ -74,7 +74,7 @@
     "href": "download.html#quick-start-loading-snippets",
     "title": "Data Download & Quick Start",
     "section": "Quick Start Loading Snippets",
-    "text": "Quick Start Loading Snippets\nYou can load the cleaned dataset directly into your environment using a single line of code in R, Python, or Stata.\n\nR (RDS / CSV / DTA)Python (Pandas)Stata\n\n\n# --- Load native R format (preserves labels and classes) ---\ndf &lt;- readRDS(\"data/clean/ssi2012_cleaned.rds\")\n\n# --- Load general self-documenting CSV ---\nlibrary(readr)\ndf_csv &lt;- read_csv(\"data/clean/ssi2012_cleaned.csv\")\n\n# --- Load Stata DTA format ---\nlibrary(haven)\ndf_stata &lt;- read_dta(\"data/clean/ssi2012_cleaned.dta\")\n\n# --- Load SPSS SAV format ---\ndf_spss &lt;- read_sav(\"data/clean/ssi2012_cleaned.sav\")\n\n\nimport pandas as pd\n\n# --- Load general self-documenting CSV ---\ndf = pd.read_csv(\"data/clean/ssi2012_cleaned.csv\")\n\n# --- Load Numeric Coded CSV ---\ndf_coded = pd.read_csv(\"data/clean/ssi2012_cleaned_coded.csv\")\n\n# --- Load Stata DTA format (reads embedded value labels if convert_categoricals=True) ---\ndf_stata = pd.read_stata(\"data/clean/ssi2012_cleaned.dta\")\n\n# --- Load SPSS SAV format ---\n# Requires: pip install pyreadstat\ndf_spss = pd.read_spss(\"data/clean/ssi2012_cleaned.sav\")\n\n\n* --- Load cleaned Stata DTA dataset ---\nuse \"data/clean/ssi2012_cleaned.dta\", clear\n\n* --- Describe variables and look at labels ---\ndescribe\ntabulate classicaltaste"
+    "text": "Quick Start Loading Snippets\nYou can load the cleaned dataset directly into your environment using a single line of code in R, Python, or Stata.\n\nR (RDS / CSV / DTA)Python (Pandas)Stata\n\n\n# --- Load native R format (preserves labels and classes) ---\ndf &lt;- readRDS(\"data/clean/ssi2012_cleaned.rds\")\n\n# --- Load general self-documenting CSV ---\nlibrary(readr)\ndf_csv &lt;- read_csv(\"data/clean/ssi2012_cleaned.csv\")\n\n# --- Load Stata DTA format ---\nlibrary(haven)\ndf_stata &lt;- read_dta(\"data/clean/ssi2012_cleaned.dta\")\n\n# --- Load SPSS SAV format ---\ndf_spss &lt;- read_sav(\"data/clean/ssi2012_cleaned.sav\")\n\n\nimport pandas as pd\n\n# --- Load general self-documenting CSV ---\ndf = pd.read_csv(\"data/clean/ssi2012_cleaned.csv\")\n\n# --- Load Numeric Coded CSV ---\ndf_coded = pd.read_csv(\"data/clean/ssi2012_cleaned_coded.csv\")\n\n# --- Load Stata DTA format (reads embedded value labels by default) ---\ndf_stata = pd.read_stata(\"data/clean/ssi2012_cleaned.dta\")\n\n# --- Load SPSS SAV format ---\n# Requires: pip install pyreadstat\ndf_spss = pd.read_spss(\"data/clean/ssi2012_cleaned.sav\")\n\n\n* --- Load cleaned Stata DTA dataset ---\nuse \"data/clean/ssi2012_cleaned.dta\", clear\n\n* --- Describe variables and look at labels ---\ndescribe\ntabulate classicaltaste"
   },
   {
     "objectID": "codebook.html",
@@ -102,7 +102,7 @@
     "href": "explore.html#classical-music-tastes",
     "title": "Exploratory Analysis Showcase",
     "section": "1. Classical Music Tastes",
-    "text": "1. Classical Music Tastes\nLet’s examine how respondents rate their liking of Classical music (classicaltaste). This variable has four main levels: like, dislike, neither like nor dislike, and I am not familiar with this type of music.\n\n\nShow Code\n# Convert classicaltaste to standard factor for plotting\ndf_classical &lt;- df |&gt; \n  filter(!is.na(classicaltaste)) |&gt; \n  mutate(classicaltaste = as_factor(classicaltaste))\n\n# Create bar chart with aesthetic mapping to y-axis (avoiding coord_flip)\nggplot(df_classical, aes(y = classicaltaste)) +\n  geom_bar() +\n  labs(\n    x = \"Count of Respondents\",\n    y = \"Classical Music Taste\"\n  )\n\n\n\n\n\n\n\n\nFigure 1: Distribution of Classical Music Tastes among respondents.\n\n\n\n\n\nAs shown in Figure 1, a substantial majority of the 2,275 respondents report that they like Classical music, while only a small percentage are completely unfamiliar with it."
+    "text": "1. Classical Music Tastes\nLet’s examine how respondents rate their liking of Classical music (classicaltaste). This variable has four main levels: like, dislike, neither like nor dislike, and I am not familiar with this type of music.\n\n\nShow Code\n# Convert classicaltaste to standard factor for plotting\ndf_classical &lt;- df |&gt; \n  filter(!is.na(classicaltaste)) |&gt; \n  mutate(classicaltaste = as_factor(classicaltaste))\n\n# Create bar chart with aesthetic mapping to y-axis (avoiding coord_flip)\nggplot(df_classical, aes(y = classicaltaste)) +\n  geom_bar() +\n  labs(\n    x = \"Count of Respondents\",\n    y = \"Classical Music Taste\"\n  )\n\n\n\n\n\n\n\n\nFigure 1: Distribution of Classical Music Tastes among respondents.\n\n\n\n\n\nAs shown in Figure 1, 1,247 of the 2,264 respondents who answered this question (55%) report that they like Classical music, while 79 (about 3.5%) say they are not familiar with this type of music."
   },
   {
     "objectID": "explore.html#subjective-social-class-self-identification",
@@ -116,6 +116,6 @@
     "href": "explore.html#painting-impression-ratings-pre-test",
     "title": "Exploratory Analysis Showcase",
     "section": "3. Painting Impression Ratings (Pre-Test)",
-    "text": "3. Painting Impression Ratings (Pre-Test)\nBefore receiving any social manipulation, respondents gave their first impression of an abstract painting on a scale from 1 (dislike very much) to 7 (like very much) (taste1).\n\n\nShow Code\n# Convert taste1 to standard factor to represent its ordinal categories\ndf_painting &lt;- df |&gt; \n  filter(!is.na(taste1)) |&gt; \n  mutate(taste1_factor = as_factor(taste1))\n\nggplot(df_painting, aes(y = taste1_factor)) +\n  geom_bar() +\n  labs(\n    x = \"Count of Respondents\",\n    y = \"Initial Rating (1 = Dislike Very Much, 7 = Like Very Much)\"\n  )\n\n\n\n\n\n\n\n\nFigure 3: Distribution of initial painting taste ratings (1-7 scale).\n\n\n\n\n\nThe pre-test ratings shown in Figure 3 reveal a wide distribution of opinions on the painting, peaking in the neutral and mild liking ranges."
+    "text": "3. Painting Impression Ratings (Pre-Test)\nBefore receiving any social manipulation, respondents gave their first impression of an abstract painting on a scale from 1 (like very much) to 7 (dislike very much) (taste1).\n\n\nShow Code\n# Convert taste1 to standard factor to represent its ordinal categories\ndf_painting &lt;- df |&gt; \n  filter(!is.na(taste1)) |&gt; \n  mutate(taste1_factor = as_factor(taste1))\n\nggplot(df_painting, aes(y = taste1_factor)) +\n  geom_bar() +\n  labs(\n    x = \"Count of Respondents\",\n    y = \"Initial Rating (1 = Like Very Much, 7 = Dislike Very Much)\"\n  )\n\n\n\n\n\n\n\n\nFigure 3: Distribution of initial painting taste ratings (1-7 scale).\n\n\n\n\n\nThe pre-test ratings in Figure 3 are spread across the scale. The most common responses are “I like it” (637) and “I like it just a little” (538); the neutral option (483) is less common than either."
   }
 ]

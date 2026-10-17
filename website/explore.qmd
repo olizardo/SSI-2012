@@ -39,7 +39,7 @@ ggplot(df_classical, aes(y = classicaltaste)) +
   )
 ```
 
-As shown in @fig-classical, a substantial majority of the 2,275 respondents report that they like Classical music, while only a small percentage are completely unfamiliar with it.
+As shown in @fig-classical, 1,247 of the 2,264 respondents who answered this question (55%) report that they like Classical music, while 79 (about 3.5%) say they are not familiar with this type of music.
 
 ---
 
@@ -73,7 +73,7 @@ As displayed in @fig-class, the majority of respondents identify as middle class
 
 ## 3. Painting Impression Ratings (Pre-Test)
 
-Before receiving any social manipulation, respondents gave their first impression of an abstract painting on a scale from 1 (dislike very much) to 7 (like very much) (`taste1`).
+Before receiving any social manipulation, respondents gave their first impression of an abstract painting on a scale from 1 (like very much) to 7 (dislike very much) (`taste1`).
 
 ```{r}
 #| label: fig-painting-taste
@@ -90,8 +90,8 @@ ggplot(df_painting, aes(y = taste1_factor)) +
   geom_bar() +
   labs(
     x = "Count of Respondents",
-    y = "Initial Rating (1 = Dislike Very Much, 7 = Like Very Much)"
+    y = "Initial Rating (1 = Like Very Much, 7 = Dislike Very Much)"
   )
 ```
 
-The pre-test ratings shown in @fig-painting-taste reveal a wide distribution of opinions on the painting, peaking in the neutral and mild liking ranges.
+The pre-test ratings in @fig-painting-taste are spread across the scale. The most common responses are "I like it" (637) and "I like it just a little" (538); the neutral option (483) is less common than either.

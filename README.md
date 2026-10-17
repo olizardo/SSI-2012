@@ -1,6 +1,6 @@
 # Survey Sample International 2012 (SSI-2012) Cultural Tastes Dataset
 
-[![Quarto Website](https://img.shields.io/badge/Quarto-Website-blue?logo=quarto)](https://omarlizardo.github.io/SSI-2012/)
+[![Quarto Website](https://img.shields.io/badge/Quarto-Website-blue?logo=quarto)](https://olizardo.github.io/SSI-2012/)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 A clean, documented, and public-ready dataset of American cultural tastes, social demographics, and aesthetic perceptions collected by **Omar Lizardo** (UCLA) and **Sara Skiles** in 2012.
@@ -101,18 +101,10 @@ The website is authored in Quarto and compiled into the `docs/` folder in the re
 To host and publish this Quarto website for free via **GitHub Pages**, follow these simple steps once you push this repository to GitHub:
 
 ### Step 1: Create Your GitHub Repository
-1. Initialize a git repository locally:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: clean dataset, scripts, and website"
-   ```
-2. Create a new repository on GitHub named `SSI-2012`.
-3. Link and push your local commits to GitHub:
+1. The repository is hosted at https://github.com/olizardo/SSI-2012. Its default branch is `master`. To set up your own copy, fork it or create a new repository and push with:
    ```bash
    git remote add origin https://github.com/YOUR_GITHUB_USERNAME/SSI-2012.git
-   git branch -M main
-   git push -u origin main
+   git push -u origin master
    ```
 
 ### Step 2: Configure GitHub Pages Settings
@@ -122,7 +114,7 @@ To host and publish this Quarto website for free via **GitHub Pages**, follow th
 4. Under **Build and deployment**:
    * Set **Source** to `Deploy from a branch`.
    * Under **Branch**:
-     * Select `main` (or `master`) from the dropdown.
+     * Select `master` from the dropdown.
      * Select `/docs` from the folder dropdown (this directs GitHub to serve the compiled website from our `docs/` folder instead of the root).
 5. Click **Save**.
 
@@ -130,7 +122,7 @@ To host and publish this Quarto website for free via **GitHub Pages**, follow th
 Within 1–2 minutes, GitHub will build and host your site. You can access it at:
 `https://YOUR_GITHUB_USERNAME.github.io/SSI-2012/`
 
-*(Any future updates you commit and push to the `docs/` folder of the `main` branch will automatically update on the live website!)*
+*(Any future updates you commit and push to the `docs/` folder of the `master` branch will automatically update on the live website!)*
 
 ---
 

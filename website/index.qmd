@@ -89,8 +89,8 @@ The SSI-2012 dataset covers a wide array of cultural, aesthetic, and demographic
 ## Dataset Cleanliness & Integrity
 
 This distribution contains data that has been **comprehensively cleaned and properly labeled** for immediate scientific use:
--All categorical and ordinal variables have embedded **Stata and SPSS value labels**, and are converted to standard **R factors** in the primary R format.
--Variables have been documented in a fully automated, interactive data dictionary.
+- Categorical and ordinal variables carry embedded **Stata and SPSS value labels**. The R format keeps those labels, and the descriptive CSV writes them as text.
+- Variables have been documented in a fully automated, interactive data dictionary.
 ---
 
 ## Citation & Citation Guide
@@ -99,7 +99,7 @@ If you use this dataset in a scientific publication, paper, presentation, or cla
 
 ::: {.callout-note}
 ## Recommended Citation
-Lizardo, Omar, and Sara Skiles. 2012. *Survey Sample International (SSI) Cultural Tastes Survey*. [Dataset]. Distributed by [Insert Repo Link].
+Lizardo, Omar, and Sara Skiles. 2012. *Survey Sample International (SSI) Cultural Tastes Survey*. [Dataset]. Distributed by GitHub at https://github.com/olizardo/SSI-2012.
 :::
 
 For LaTeX users, here is the BibTeX entry:
@@ -109,8 +109,7 @@ For LaTeX users, here is the BibTeX entry:
   author       = {Lizardo, Omar and Skiles, Sara},
   title        = {Survey Sample International (SSI) Cultural Tastes Survey},
   year         = {2012},
-  howpublished = {\url{https://github.com/omarlizardo/SSI-2012}},
-  note         = {Accessed: [Date]}
+  howpublished = {\url{https://github.com/olizardo/SSI-2012}}
 }
 ```
 

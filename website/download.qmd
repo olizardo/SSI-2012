@@ -2,18 +2,18 @@
 title: "Data Download & Quick Start"
 ---
 
-The cleaned and fully labeled SSI-2012 dataset is available for download in several standard formats, ensuring seamless integration with R, Python, Stata, SPSS, Excel, and other tools.
+The cleaned and fully labeled SSI-2012 dataset is available for download in several standard formats, ensuring seamless integration with R, Python, Stata, SPSS, spreadsheet software, and other tools.
 
 ## Download Links
 
 Click on any of the buttons below to download the cleaned dataset (404 variables, 2,275 rows) in your preferred format:
 
 ::: {style="margin: 2rem 0;"}
-<a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.csv" class="download-btn download-csv">📊 Download CSV (Self-Documenting / Text)</a>
-<a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned_coded.csv" class="download-btn download-csv">🔢 Download CSV (Numeric Coded)</a>
-<a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.rds" class="download-btn download-rds">📦 Download R RDS Format</a>
-<a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.dta" class="download-btn download-dta">Stata Download Stata .DTA</a>
-<a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.sav" class="download-btn download-sav">💾 Download SPSS .SAV</a>
+<a href="https://raw.githubusercontent.com/olizardo/SSI-2012/master/data/clean/ssi2012_cleaned.csv" class="download-btn download-csv">📊 Download CSV (Self-Documenting / Text)</a>
+<a href="https://raw.githubusercontent.com/olizardo/SSI-2012/master/data/clean/ssi2012_cleaned_coded.csv" class="download-btn download-csv">🔢 Download CSV (Numeric Coded)</a>
+<a href="https://raw.githubusercontent.com/olizardo/SSI-2012/master/data/clean/ssi2012_cleaned.rds" class="download-btn download-rds">📦 Download R RDS Format</a>
+<a href="https://raw.githubusercontent.com/olizardo/SSI-2012/master/data/clean/ssi2012_cleaned.dta" class="download-btn download-dta">📄 Download Stata .DTA</a>
+<a href="https://raw.githubusercontent.com/olizardo/SSI-2012/master/data/clean/ssi2012_cleaned.sav" class="download-btn download-sav">💾 Download SPSS .SAV</a>
 :::
 
 ---
@@ -70,7 +70,7 @@ df = pd.read_csv("data/clean/ssi2012_cleaned.csv")
 # --- Load Numeric Coded CSV ---
 df_coded = pd.read_csv("data/clean/ssi2012_cleaned_coded.csv")
 
-# --- Load Stata DTA format (reads embedded value labels if convert_categoricals=True) ---
+# --- Load Stata DTA format (reads embedded value labels by default) ---
 df_stata = pd.read_stata("data/clean/ssi2012_cleaned.dta")
 
 # --- Load SPSS SAV format ---
