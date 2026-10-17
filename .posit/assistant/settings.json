@@ -20,7 +20,14 @@
       "which *": "allow",
       "cp *": "allow",
       "ls *": "allow",
-      "head *": "allow"
+      "head *": "allow",
+      "cd *": "allow",
+      "awk *": "allow",
+      "git branch *": "allow",
+      "git ls-remote *": "allow",
+      "echo *": "allow",
+      "grep *": "allow",
+      "cut *": "allow"
     },
     "executeCode": {
       "*": "allow"
