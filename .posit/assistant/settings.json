@@ -16,7 +16,11 @@
       "mkdir *": "allow",
       "mv *": "allow",
       "pandoc *": "allow",
-      "quarto *": "allow"
+      "quarto *": "allow",
+      "which *": "allow",
+      "cp *": "allow",
+      "ls *": "allow",
+      "head *": "allow"
     },
     "executeCode": {
       "*": "allow"

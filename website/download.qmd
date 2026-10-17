@@ -6,7 +6,7 @@ The cleaned and fully labeled SSI-2012 dataset is available for download in seve
 
 ## Download Links
 
-Click on any of the buttons below to download the cleaned dataset (404 variables, 2,276 rows) in your preferred format:
+Click on any of the buttons below to download the cleaned dataset (404 variables, 2,275 rows) in your preferred format:
 
 ::: {style="margin: 2rem 0;"}
 <a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.csv" class="download-btn download-csv">📊 Download CSV (Self-Documenting / Text)</a>

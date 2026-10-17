@@ -13,6 +13,11 @@ cat("--- Starting Data Cleaning and Reorganization ---\n")
 raw_data <- read_dta("data/raw/SSI2012.dta")
 cat("Loaded raw dataset with", nrow(raw_data), "rows and", ncol(raw_data), "columns.\n")
 
+# Drop the trailing row with no respondent id; it carries only derived variables
+raw_data <- raw_data |>
+  filter(!is.na(id))
+cat("Retained", nrow(raw_data), "rows with a respondent id.\n")
+
 # 2. Define the core variables to keep
 # These represent the main raw questionnaire responses from the survey.
 demographics <- c(

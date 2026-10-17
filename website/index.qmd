@@ -16,9 +16,51 @@ This dataset provides a rich public resource for researchers, students, and prac
 
 ---
 
+## Sample and Sampling
+
+The data come from an online survey fielded by Survey Sample International (SSI), a private firm that specializes in sampling and data collection. SSI drew respondents from its member database between February 28 and March 6, 2012. The sample was designed to approximate the U.S. adult population, with college graduates deliberately oversampled.
+
+Quotas on age, gender, region of residence, education, and race/ethnicity governed admission. Once enough people with a given demographic profile had completed the survey, later applicants with that profile were screened out. Respondents gave informed consent, had to be at least 18, and received \$3.92 for completing the survey. SSI handled all payments.
+
+Of the 3,782 people who opened the survey, 2,275 records remain after screening:
+
+| Stage | Respondents |
+|---|---|
+| Opened the survey | 3,782 |
+| Declined informed consent | 85 |
+| Under 18 | 12 |
+| Screened out because their demographic quota was full | 1,394 |
+| Stopped within the first few screens (as reported; not flagged in the released data) | 16 |
+| **Records in released data** | **2,275** |
+
+The released data contain 2,275 records: 2,258 with a finished status of "complete record" and 17 with "some missing data." The dissertation reports 16 early stoppers as excluded, but the released data do not flag them. The partial records are included, consistent with the dissertation's condition and demographic counts. Filter on the `finished` variable to restrict analyses to completed surveys.
+
+The survey software randomly assigned respondents to a control condition (529) or to experimental conditions (1,746). See the codebook for variable definitions.
+
+### Known departures from the U.S. adult population
+
+The sample does not match the U.S. adult population on every dimension. Skiles (2014) documents these departures:
+
+- College graduates are overrepresented by design. About a quarter of respondents finished their education before taking any college courses, compared with 44% of U.S. adults.
+- Adults aged 18 to 19 are slightly underrepresented (2.6% of the sample versus 3.9% of U.S. adults).
+- Men aged 70 and older are overrepresented (8.4% of the sample versus 4.9% of U.S. adults).
+- Because the survey was online, people without reliable internet access are probably underrepresented.
+- The \$3.92 payment may not motivate high-income respondents, who are likely underrepresented.
+- Other differences from the population, which the survey questions do not measure, are likely.
+
+The source does not describe survey weights, and the codebook contains no weight variable. Users who need population-representative estimates should account for the design features above when interpreting results.
+
+The authoritative description of the sampling procedures is Chapter 2 (Sections 2.1 and 2.3) of Skiles (2014), the dissertation that documents the survey behind this dataset. When describing sampling in your own work, cite it as:
+
+> Skiles, S. (2014). *Aesthetic Taste Expression and Symbolic Boundary Work* (Version 1). University of Notre Dame. [https://doi.org/10.7274/z890rr19n23](https://doi.org/10.7274/z890rr19n23)
+>
+> The dissertation is also listed in ProQuest Dissertations & Theses (publication number 3731603): [ProQuest record](https://www.proquest.com/docview/1734428721)
+
+---
+
 ## Dataset Scope & Key Topics
 
-The SSI-2012 dataset covers a wide array of cultural, aesthetic, and demographic measures from a national sample of **2,276 Americans**:
+The SSI-2012 dataset covers a wide array of cultural, aesthetic, and demographic measures from a national sample of **2,275 Americans**:
 
 ### 1. Music Genres and Preferences
 * **Genre Tastes**: 1–4 ordinal rating of liking/disliking for **20 distinct music genres** (ranging from Classical, Opera, and Jazz to Bluegrass, Hip-Hop, Indie, and Heavy Metal).

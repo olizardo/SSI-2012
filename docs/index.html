@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -74,10 +77,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f9da83f35c8a9777c3928170ebd7038e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-27b9f889d6e109d015426ac4f274b7e7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -164,6 +167,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#cultural-tastes-social-demographics-and-aesthetic-perceptions-of-americans" id="toc-cultural-tastes-social-demographics-and-aesthetic-perceptions-of-americans" class="nav-link" data-scroll-target="#cultural-tastes-social-demographics-and-aesthetic-perceptions-of-americans">Cultural Tastes, Social Demographics, and Aesthetic Perceptions of Americans</a></li>
   </ul></li>
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#sample-and-sampling" id="toc-sample-and-sampling" class="nav-link" data-scroll-target="#sample-and-sampling">Sample and Sampling</a>
+  <ul class="collapse">
+  <li><a href="#known-departures-from-the-u.s.-adult-population" id="toc-known-departures-from-the-u.s.-adult-population" class="nav-link" data-scroll-target="#known-departures-from-the-u.s.-adult-population">Known departures from the U.S. adult population</a></li>
+  </ul></li>
   <li><a href="#dataset-scope-key-topics" id="toc-dataset-scope-key-topics" class="nav-link" data-scroll-target="#dataset-scope-key-topics">Dataset Scope &amp; Key Topics</a>
   <ul class="collapse">
   <li><a href="#music-genres-and-preferences" id="toc-music-genres-and-preferences" class="nav-link" data-scroll-target="#music-genres-and-preferences">1. Music Genres and Preferences</a></li>
@@ -208,13 +215,78 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Welcome to the repository and documentation website hosting the <strong>Survey Sample International 2012 (SSI-2012)</strong> dataset. This comprehensive dataset was collected by <strong>Omar Lizardo</strong> (UCLA, formerly University of Notre Dame) and <strong>Sara Skiles</strong> (formerly University of Notre Dame) as part of a national sociological study investigating the cultural tastes, preferences, social stratification, and aesthetic perceptions of Americans.</p>
+<p>Welcome to the repository and documentation website hosting the <strong>Survey Sample International 2012 (SSI-2012)</strong> dataset. This comprehensive dataset was collected by <strong>Omar Lizardo</strong> (UCLA, formerly University of Notre Dame) and <strong>Sara Skiles</strong> (University of Notre Dame) as part of a national sociological study investigating the cultural tastes, preferences, social stratification, and aesthetic perceptions of Americans.</p>
 <p>This dataset provides a rich public resource for researchers, students, and practitioners interested in the sociology of culture, consumption practices, and social demographics.</p>
 <hr>
 </section>
+<section id="sample-and-sampling" class="level2">
+<h2 class="anchored" data-anchor-id="sample-and-sampling">Sample and Sampling</h2>
+<p>The data come from an online survey fielded by Survey Sample International (SSI), a private firm that specializes in sampling and data collection. SSI drew respondents from its member database between February 28 and March 6, 2012. The sample was designed to approximate the U.S. adult population, with college graduates deliberately oversampled.</p>
+<p>Quotas on age, gender, region of residence, education, and race/ethnicity governed admission. Once enough people with a given demographic profile had completed the survey, later applicants with that profile were screened out. Respondents gave informed consent, had to be at least 18, and received $3.92 for completing the survey. SSI handled all payments.</p>
+<p>Of the 3,782 people who opened the survey, 2,275 records remain after screening:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Respondents</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Opened the survey</td>
+<td>3,782</td>
+</tr>
+<tr class="even">
+<td>Declined informed consent</td>
+<td>85</td>
+</tr>
+<tr class="odd">
+<td>Under 18</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td>Screened out because their demographic quota was full</td>
+<td>1,394</td>
+</tr>
+<tr class="odd">
+<td>Stopped within the first few screens (as reported; not flagged in the released data)</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td><strong>Records in released data</strong></td>
+<td><strong>2,275</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The released data contain 2,275 records: 2,258 with a finished status of “complete record” and 17 with “some missing data.” The dissertation reports 16 early stoppers as excluded, but the released data do not flag them. The partial records are included, consistent with the dissertation’s condition and demographic counts. Filter on the <code>finished</code> variable to restrict analyses to completed surveys.</p>
+<p>The survey software randomly assigned respondents to a control condition (529) or to experimental conditions (1,746). See the codebook for variable definitions.</p>
+<section id="known-departures-from-the-u.s.-adult-population" class="level3">
+<h3 class="anchored" data-anchor-id="known-departures-from-the-u.s.-adult-population">Known departures from the U.S. adult population</h3>
+<p>The sample does not match the U.S. adult population on every dimension. Skiles (2014) documents these departures:</p>
+<ul>
+<li>College graduates are overrepresented by design. About a quarter of respondents finished their education before taking any college courses, compared with 44% of U.S. adults.</li>
+<li>Adults aged 18 to 19 are slightly underrepresented (2.6% of the sample versus 3.9% of U.S. adults).</li>
+<li>Men aged 70 and older are overrepresented (8.4% of the sample versus 4.9% of U.S. adults).</li>
+<li>Because the survey was online, people without reliable internet access are probably underrepresented.</li>
+<li>The $3.92 payment may not motivate high-income respondents, who are likely underrepresented.</li>
+<li>Other differences from the population, which the survey questions do not measure, are likely.</li>
+</ul>
+<p>The source does not describe survey weights, and the codebook contains no weight variable. Users who need population-representative estimates should account for the design features above when interpreting results.</p>
+<p>The authoritative description of the sampling procedures is Chapter 2 (Sections 2.1 and 2.3) of Skiles (2014), the dissertation that documents the survey behind this dataset. When describing sampling in your own work, cite it as:</p>
+<blockquote class="blockquote">
+<p>Skiles, S. (2014). <em>Aesthetic Taste Expression and Symbolic Boundary Work</em> (Version 1). University of Notre Dame. <a href="https://doi.org/10.7274/z890rr19n23">https://doi.org/10.7274/z890rr19n23</a></p>
+<p>The dissertation is also listed in ProQuest Dissertations &amp; Theses (publication number 3731603): <a href="https://www.proquest.com/docview/1734428721">ProQuest record</a></p>
+</blockquote>
+<hr>
+</section>
+</section>
 <section id="dataset-scope-key-topics" class="level2">
 <h2 class="anchored" data-anchor-id="dataset-scope-key-topics">Dataset Scope &amp; Key Topics</h2>
-<p>The SSI-2012 dataset covers a wide array of cultural, aesthetic, and demographic measures from a national sample of <strong>2,276 Americans</strong>:</p>
+<p>The SSI-2012 dataset covers a wide array of cultural, aesthetic, and demographic measures from a national sample of <strong>2,275 Americans</strong>:</p>
 <section id="music-genres-and-preferences" class="level3">
 <h3 class="anchored" data-anchor-id="music-genres-and-preferences">1. Music Genres and Preferences</h3>
 <ul>
@@ -255,8 +327,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="dataset-cleanliness-integrity" class="level2">
 <h2 class="anchored" data-anchor-id="dataset-cleanliness-integrity">Dataset Cleanliness &amp; Integrity</h2>
-<p>This distribution contains data that has been <strong>comprehensively cleaned and properly labeled</strong> for immediate scientific use: * All complex regression factor scores, centered columns, centered interactions, and mathematical indices constructed specifically for publication drafts have been removed to preserve a clean, raw-variable schema. * All categorical and ordinal variables have embedded <strong>Stata and SPSS value labels</strong>, and are converted to standard <strong>R factors</strong> in the primary R format. * Variables have been documented in a fully automated, interactive data dictionary.</p>
-<hr>
+<p>This distribution contains data that has been <strong>comprehensively cleaned and properly labeled</strong> for immediate scientific use: -All categorical and ordinal variables have embedded <strong>Stata and SPSS value labels</strong>, and are converted to standard <strong>R factors</strong> in the primary R format. -Variables have been documented in a fully automated, interactive data dictionary. —</p>
 </section>
 <section id="citation-citation-guide" class="level2">
 <h2 class="anchored" data-anchor-id="citation-citation-guide">Citation &amp; Citation Guide</h2>

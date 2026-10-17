@@ -39,7 +39,7 @@ ggplot(df_classical, aes(y = classicaltaste)) +
   )
 ```
 
-As shown in @fig-classical, a substantial majority of the 2,276 respondents report that they like Classical music, while only a small percentage are completely unfamiliar with it.
+As shown in @fig-classical, a substantial majority of the 2,275 respondents report that they like Classical music, while only a small percentage are completely unfamiliar with it.
 
 ---
 

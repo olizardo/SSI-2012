@@ -68,6 +68,6 @@ The table above contains the following columns for each variable:
 2. **Description / Label**: A plain-English explanation of what the variable represents.
 3. **Data Type**: Whether the variable is `Categorical (Labelled)`, `Numeric`, `Character (Text)`, or a `Binary Indicator (0/1)`.
 4. **Value Codes / Categories**: For categorical and binary variables, this column displays the numeric codes and their corresponding text meanings (e.g., `1 = like; 2 = dislike`). For numeric columns, it displays the valid range.
-5. **Valid N**: The number of non-missing observations (out of 2,276 total).
+5. **Valid N**: The number of non-missing observations (out of 2,275 total).
 6. **Missing N**: The number of missing (`NA`) observations.
 7. **Missing %**: The percentage of respondents with missing values for that variable.
