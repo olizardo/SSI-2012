@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -74,10 +77,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c8b36098594828138602e592b3b57366.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-27b9f889d6e109d015426ac4f274b7e7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -193,12 +196,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>The cleaned and fully labeled SSI-2012 dataset is available for download in several standard formats, ensuring seamless integration with R, Python, Stata, SPSS, Excel, and other tools.</p>
+<p>The cleaned and fully labeled SSI-2012 dataset is available for download in several standard formats, ensuring seamless integration with R, Python, Stata, SPSS, spreadsheet software, and other tools.</p>
 <section id="download-links" class="level2">
 <h2 class="anchored" data-anchor-id="download-links">Download Links</h2>
-<p>Click on any of the buttons below to download the cleaned dataset (404 variables, 2,276 rows) in your preferred format:</p>
+<p>Click on any of the buttons below to download the cleaned dataset (404 variables, 2,275 rows) in your preferred format:</p>
 <div style="margin: 2rem 0;">
-<p><a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.csv" class="download-btn download-csv">📊 Download CSV (Self-Documenting / Text)</a> <a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned_coded.csv" class="download-btn download-csv">🔢 Download CSV (Numeric Coded)</a> <a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.rds" class="download-btn download-rds">📦 Download R RDS Format</a> <a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.dta" class="download-btn download-dta">Stata Download Stata .DTA</a> <a href="https://raw.githubusercontent.com/omarlizardo/SSI-2012/main/data/clean/ssi2012_cleaned.sav" class="download-btn download-sav">💾 Download SPSS .SAV</a></p>
+<p><a href="https://raw.githubusercontent.com/olizardo/SSI-2012/master/data/clean/ssi2012_cleaned.csv" class="download-btn download-csv">📊 Download CSV (Self-Documenting / Text)</a> <a href="https://raw.githubusercontent.com/olizardo/SSI-2012/master/data/clean/ssi2012_cleaned_coded.csv" class="download-btn download-csv">🔢 Download CSV (Numeric Coded)</a> <a href="https://raw.githubusercontent.com/olizardo/SSI-2012/master/data/clean/ssi2012_cleaned.rds" class="download-btn download-rds">📦 Download R RDS Format</a> <a href="https://raw.githubusercontent.com/olizardo/SSI-2012/master/data/clean/ssi2012_cleaned.dta" class="download-btn download-dta">📄 Download Stata .DTA</a> <a href="https://raw.githubusercontent.com/olizardo/SSI-2012/master/data/clean/ssi2012_cleaned.sav" class="download-btn download-sav">💾 Download SPSS .SAV</a></p>
 </div>
 <hr>
 </section>
@@ -261,7 +264,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Load Numeric Coded CSV ---</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>df_coded <span class="op">=</span> pd.read_csv(<span class="st">"data/clean/ssi2012_cleaned_coded.csv"</span>)</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Load Stata DTA format (reads embedded value labels if convert_categoricals=True) ---</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Load Stata DTA format (reads embedded value labels by default) ---</span></span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>df_stata <span class="op">=</span> pd.read_stata(<span class="st">"data/clean/ssi2012_cleaned.dta"</span>)</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Load SPSS SAV format ---</span></span>
@@ -356,7 +359,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/olizardo\.github\.io\/SSI-2012\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
