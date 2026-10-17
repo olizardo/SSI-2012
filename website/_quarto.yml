@@ -4,6 +4,7 @@ project:
 
 website:
   title: "SSI-2012 Dataset"
+  site-url: "https://olizardo.github.io/SSI-2012"
   description: "Survey Sample International 2012 Cultural Tastes Dataset"
   navbar:
     background: primary
