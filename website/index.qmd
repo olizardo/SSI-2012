@@ -68,7 +68,7 @@ The SSI-2012 dataset covers a wide array of cultural, aesthetic, and demographic
 * **Favorite Genre**: A single categorical measure identifying the respondent's favorite genre among all 20 options.
 
 ### 2. Cultural Stereotypes: Typical Fan Characteristics
-* A massive, multi-dimensional grid of **320 variables** (20 genres × 16 social characteristics) capturing the respondent's perceptions of the "typical fans" of each music genre. 
+* A large, multi-dimensional grid of **320 variables** (20 genres × 16 social characteristics) capturing the respondent's perceptions of the "typical fans" of each music genre. 
 * Social dimensions include gender, race/ethnicity, education, age, and social class (e.g., whether a typical fan is female, college-educated, white, working-class, etc.).
 
 ### 3. Aesthetics & Painting Conformity Experiment
